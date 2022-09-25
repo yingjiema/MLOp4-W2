@@ -1,5 +1,5 @@
 {
-    "body": "{\"query\": [\"hello world\"]}",
+    "body": "{\"query\": [\"hello world\"]}", need to encode the image into the string
     "resource": "/face-sentiment",
     "path": "/face-sentiment",
     "httpMethod": "GET",

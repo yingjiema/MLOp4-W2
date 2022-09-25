@@ -14,7 +14,7 @@ Globals:
     MemorySize: 1024
 
 Resources:
-  FaceSentimentFunction:
+  CoolFaceSentimentFunction:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
       PackageType: Image
@@ -43,9 +43,9 @@ Outputs:
   FaceSentimentApi:
     Description: "API Gateway endpoint URL for Prod stage"
     Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/"
-  FaceSentimentFunction:
+  CoolFaceSentimentFunction:
     Description: "Face Sentiment Analysis Lambda Function ARN"
-    Value: !GetAtt FaceSentimentFunction.Arn
-  FaceSentimentFunctionIamRole:
+    Value: !GetAtt CoolFaceSentimentFunction.Arn
+  CoolFaceSentimentFunctionIamRole:
     Description: "Implicit IAM Role created"
-    Value: !GetAtt FaceSentimentFunctionRole.Arn
+    Value: !GetAtt CoolFaceSentimentFunctionRole.Arn
